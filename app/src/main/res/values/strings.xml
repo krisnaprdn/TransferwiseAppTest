@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TransferwiseApp</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="newtotransferwise">New to Transferwise?</string>
+    <string name="Signup"><u>Sign Up</u></string>
+    <string name="Email_hint">Email</string>
+    <string name="pass_hint">Password</string>
+    <string name="Login">Log In</string>
+    <string name="otp">Type your 6-digit security code here:</string>
+    <string name="otpdone">Done</string>
+    <string name="recipientname">Daniel Hu</string>
+    <string name="amounttransfer">200.000 IDR</string>
+    <string name="statustransfer">Completed</string>
+    <string name="convertsamount">About 13.6 USD</string>
+</resources>
