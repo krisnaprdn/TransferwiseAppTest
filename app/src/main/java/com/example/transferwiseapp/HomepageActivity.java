@@ -19,7 +19,8 @@ public class HomepageActivity extends AppCompatActivity {
 
     private LinearLayoutManager layoutManager;
     private HomepageAdapter adapter;
-    private List<HomepageModel> list = new ArrayList<>();
+    private ArrayList<HomepageModel> list = new ArrayList<>();
+    private HomepageModel homepageModel;
 
     @BindView(R.id.rv_homepage)
     RecyclerView rv_homepage;
@@ -29,7 +30,7 @@ public class HomepageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
         ButterKnife.bind(this);
-//        initLiveData();
+        initLiveData();
         initRecyclerView();
     }
 
@@ -39,19 +40,43 @@ public class HomepageActivity extends AppCompatActivity {
         this.rv_homepage.setLayoutManager(mLayoutManager);
         adapter = new HomepageAdapter(this, list);
         this.rv_homepage.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 
-//    public void initLiveData(){
-//        HomepageModel list = new HomepageModel("Krisna Perdana", "200.000 IDR", "Completed", "About 13.6 USD");
-//        list.add(list);
-//        HomepageModel list = new HomepageModel("Krisna Perdana", "200.000 IDR", "Completed", "About 13.6 USD");
-//        list.add(list);
-//        HomepageModel list = new HomepageModel("Krisna Perdana", "200.000 IDR", "Completed", "About 13.6 USD");
-//        list.add(list);
-//        HomepageModel list = new HomepageModel("Krisna Perdana", "200.000 IDR", "Completed", "About 13.6 USD");
-//        list.add(list);
-//        HomepageModel list = new HomepageModel("Krisna Perdana", "200.000 IDR", "Completed", "About 13.6 USD");
-//        list.add(list);
-//
-//    }
+    public void initLiveData(){
+        homepageModel = new HomepageModel();
+        homepageModel.setTxt_recipientname("Krisna Perdana");
+        homepageModel.setTxt_amounttransfer("200.000 IDR");
+        homepageModel.setTxt_status("Completed");
+        homepageModel.setTxt_convertsamount("About 13.6 USD");
+        list.add(homepageModel);
+
+        homepageModel = new HomepageModel();
+        homepageModel.setTxt_recipientname("Krisna Perdana");
+        homepageModel.setTxt_amounttransfer("200.000 IDR");
+        homepageModel.setTxt_status("Completed");
+        homepageModel.setTxt_convertsamount("About 13.6 USD");
+        list.add(homepageModel);
+
+        homepageModel = new HomepageModel();
+        homepageModel.setTxt_recipientname("Krisna Perdana");
+        homepageModel.setTxt_amounttransfer("200.000 IDR");
+        homepageModel.setTxt_status("Completed");
+        homepageModel.setTxt_convertsamount("About 13.6 USD");
+        list.add(homepageModel);
+
+        homepageModel = new HomepageModel();
+        homepageModel.setTxt_recipientname("Krisna Perdana");
+        homepageModel.setTxt_amounttransfer("200.000 IDR");
+        homepageModel.setTxt_status("Completed");
+        homepageModel.setTxt_convertsamount("About 13.6 USD");
+        list.add(homepageModel);
+
+        homepageModel = new HomepageModel();
+        homepageModel.setTxt_recipientname("Krisna Perdana");
+        homepageModel.setTxt_amounttransfer("200.000 IDR");
+        homepageModel.setTxt_status("Completed");
+        homepageModel.setTxt_convertsamount("About 13.6 USD");
+        list.add(homepageModel);
+    }
 }

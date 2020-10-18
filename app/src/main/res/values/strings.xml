@@ -12,4 +12,5 @@
     <string name="amounttransfer">200.000 IDR</string>
     <string name="statustransfer">Completed</string>
     <string name="convertsamount">About 13.6 USD</string>
+    <string name="Buttonsendmoney">Send Money</string>
 </resources>

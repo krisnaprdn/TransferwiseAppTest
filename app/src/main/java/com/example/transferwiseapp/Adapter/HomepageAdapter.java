@@ -12,14 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.transferwiseapp.Model.HomepageModel;
 import com.example.transferwiseapp.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HomepageAdapter extends RecyclerView.Adapter<HomepageAdapter.HomepageViewHolder> {
 
     private Context context;
-    private List<HomepageModel> dataList;
+    private ArrayList<HomepageModel> dataList;
 
-    public HomepageAdapter(Context context, List<HomepageModel> dataList){
+    public HomepageAdapter(Context context, ArrayList<HomepageModel> dataList){
         this.dataList = dataList;
         this.context = context;
     }
